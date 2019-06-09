@@ -23,21 +23,66 @@ h1 {
 
 h3 {
   font-size: 19px;
+  margin: 0px;
 }
 
 p, a {
   font-family: 'PT Serif', serif;
   color: rgb(95, 97, 99);
   font-size: 18px;
-  letter-spacing:.3px;
-  line-height: 25px;
+  letter-spacing:.4px;
+  line-height: 27px;
+  margin: 9px 0px 0px 0px;
 }
 
 .card {
+  display: grid;
+  grid-template-columns: 30% 70% 20%;
   border: 1px solid;
   border-radius: 5px;
   border-color: rgb(209, 217, 226);
   padding: 25px;
-  padding-bottom: 45px;
   margin-bottom: 15px;
+}
+
+.content {
+  display: grid;
+  grid-column: 2;
+}
+
+.image_placeholder {
+  width: 200px;
+  height: 150px;
+  display: grid;
+  grid-column: 1;
+  border: none;
+}
+
+.applause-button {
+  background: none;
+  border: none;
+  display: grid;
+  grid-column: 3;
+}
+
+.applause-button:focus {
+  outline: none;
+}
+
+.applause-button img {
+  margin: 20px;
+}
+
+.after-button {
+  margin: auto 0px auto 0px;
+  font-size: 20px;
+  width: 80px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.image_placeholder {
+  border-radius: 5px;
 }
